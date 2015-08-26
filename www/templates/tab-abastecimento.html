@@ -1,0 +1,32 @@
+<ion-view view-title="Lista de Abastecimentos">
+    <ion-content>
+       <br><br>
+        <div class="list">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Data</span>
+                <input type="date" placeholder="Data" ng-model="dataDoAbastecimento">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Combustível</span>
+                <input type="text" placeholder="Combustível" ng-model="kmVeiculo">
+            </label> 
+               <label class="item item-input item-floating-label">
+                <span class="input-label">Kilometragem do Veículo</span>
+                <input type="number" placeholder="Kilometragem do Veículo" ng-model="combustivel">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Valor do Combustível</span>
+                <input type="number" placeholder="Valor do Combustível" ng-model="valorCombustivel">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Valor Abastecido</span>
+                <input type="number" placeholder="Valor Abastecido" ng-model="valorAbastecido">
+            </label>
+            <div class="row">
+                <button class="button button-block button-balanced" ng-click="salvarAbastecimento()">
+                    Salvar
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
